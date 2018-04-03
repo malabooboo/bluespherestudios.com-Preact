@@ -1,0 +1,17 @@
+@import '../../shared/scss/vars';
+@import '../../shared/scss/mixins';
+
+footer {
+  padding: 20px 20px 10px;
+  background-color: #223c6e;
+
+  @include tablet {
+    padding: 20px 0 10px;
+  }
+
+  p {
+    color: rgba($color-white, .6);
+    font-size: 14px;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,15 @@
+.profile {
+	padding: 56px 20px;
+	min-height: 100%;
+	width: 100%;
+}
+
+.up {
+	transform: translateY(-50px);
+	transition: transform .4s ease-out;
+}
+
+.down {
+	transform: translateY(0);
+	transition: transform .4s ease-out;	
+}
