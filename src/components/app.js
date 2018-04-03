@@ -4,6 +4,7 @@ import { Router } from 'preact-router';
 import Header from './header';
 import Footer from './footer';
 import Hero from './section-hero';
+import Contact from './section-contact';
 import Home from '../routes/home';
 import About from '../routes/about';
 // import Profile from '../routes/profile';
@@ -28,6 +29,7 @@ export default class App extends Component {
 			<div id="app" class="wrapper">
 				<Header />
 				<Hero path="/section-hero" />
+				<Contact path="/section-contact" />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<Hero path="/section-hero" />
