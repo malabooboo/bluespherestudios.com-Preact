@@ -3,8 +3,7 @@ import {Link} from 'preact-router/match';
 import style from './style.scss';
 
 export default class Hero extends Component {
-
-  render() {
+  render(props) {
     return(
       <section class={style['section-hero']}>
         <div class="site-width">

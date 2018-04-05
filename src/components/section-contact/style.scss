@@ -1,20 +1,32 @@
 @import '../../shared/scss/vars';
 @import '../../shared/scss/mixins';
 
-h1, h2, h3, h4, h5, p, a {
+.section-contact {
+  background-color: $color-dark-gray;
   color: $color-white;
+
+  @include slanty-thing;
+
+  .section-stats {
+    background-color: $color-gray;
+    @include slanty-thing;
+  }
+
+  h1, h2, h3, h4, h5, p, a {
+    color: $color-white;
+  }
 }
 
-h2 {
+h2.section-about__heading {
   @include element-appear-resting;
-  :host.in-view & {
+  .in-view & {
     @include element-appear-in();
   }
 }
 
 .elsewhere-links {
   @include element-appear-resting;
-  :host.in-view & {
+  .in-view & {
     @include element-appear-in(.3s);
   }
 }
@@ -44,11 +56,11 @@ h2 {
   transform: scale(1.1);
 }
 
-p {
+.get-in-touch {
   margin-top: 10px;
 
   @include element-appear-resting;
-  :host.in-view & {
+  .in-view & {
     @include element-appear-in(.6s);
   }
 }
